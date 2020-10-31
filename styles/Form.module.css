@@ -1,0 +1,38 @@
+.form {
+    position: relative;
+    bottom: -4em;
+    max-width: 90%;
+    margin: auto;
+    z-index: 3;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: var(--Dark-violet);
+    background-image: url("/bg-boost-mobile.svg");
+    background-repeat: no-repeat;
+}
+
+.form input {
+    border-radius: .3em;
+    border: none;
+    outline: none;
+}
+
+.form input[type=text] {
+    margin-bottom: 1.2em;
+    padding: 1.2em;
+}
+
+.form input[type=text]::placeholder {
+    color: var(--Grayish-violet);
+    font-size: 1.1em;
+}
+
+.form input[type=submit] {
+    font-size: 1em;
+    padding: .7em;
+    font-weight: 700;
+    color: #FFF;
+    background-color: var(--Cyan);
+}

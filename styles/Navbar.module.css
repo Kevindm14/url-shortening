@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 1.5em 1em 1.3em;
+}
+
+.btn_menu {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    color: var(--Gray);
+}
+
+.logo {
+    width: 7rem;
+    align-self: center;
+}
+
+.links_login {
+    display: none;
+}
+

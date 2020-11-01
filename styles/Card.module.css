@@ -32,3 +32,49 @@
     margin-top: -2.5em;
     background: var(--Dark-violet);
 }
+
+@media (min-width: 1000px) {
+    .card h3,
+    .card p {
+        width: 100% !important;
+        text-align: start;
+    }
+
+    .card .card_logo {
+        margin: 0;
+        margin-top: -2.5em;
+    }
+
+    .card:nth-child(1) {
+        margin-bottom: 15rem;
+    }
+
+    .card:nth-child(2) {
+        margin-top: 5rem;
+        margin-bottom: 11rem;
+    }
+
+    .card:nth-child(3) {
+        margin-top: 8rem;
+        margin-bottom: 9rem;
+    }
+
+    .card:nth-child(1),
+    .card:nth-child(2) {
+        margin-right: 3em;
+    }
+
+    .card:nth-child(2):after {
+        margin-top: -6em;
+    }
+
+    .card:nth-child(1):after,
+    .card:nth-child(2):after {
+        position: absolute;
+        content:'';
+        right: -3em;
+        width: 54px;
+        height: 10px;
+        background-color: var(--Cyan);
+    }
+}

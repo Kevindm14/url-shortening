@@ -35,4 +35,26 @@
     font-weight: 700;
     color: #FFF;
     background-color: var(--Cyan);
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    .form {
+        max-width: 1100px;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5em;
+        background-position: 100%;
+    }
+
+    .form input[type=text] {
+        width: 80%;
+        margin: 0;
+        margin-right: 1em;
+    }
+
+    .form input[type=submit] {
+        width: 20%;
+    }
 }

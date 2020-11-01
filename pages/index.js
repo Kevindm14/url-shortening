@@ -30,21 +30,67 @@ export default function Home() {
 
       <Form />
 
-      <div className={styles.statistics}>
-        <h2>Advanced Statistics</h2>
-        <p>
-          Track how your links are performing across the web with our 
-          advanced statistics dashboard.
-        </p>
+      <div className={styles.bg_statistics}>
+        <div className={styles.statistics}>
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our 
+            advanced statistics dashboard.
+          </p>
 
-        <div className={styles.cards}>
-          {
-            cards.map((e, i) => {
-              return <Card cards={e} key={i}/>
-            })
-          }
+          <div className={styles.cards}>
+            {
+              cards.map((e, i) => {
+                return <Card cards={e} key={i}/>
+              })
+            }
+          </div>
         </div>
       </div>
+
+      <div className={styles.boost}>
+          <h2>Boost your links today</h2>
+          <button>Get Started</button>
+      </div>
+
+      <footer className={styles.footer}>
+
+          <div className={styles.footer_container}>
+            <div className={styles.title}>
+              <h2>Shortly</h2>
+            </div>
+            
+            <div className={styles.features}>
+              <h3>Features</h3>
+              <a href="/">Link shortening</a>
+              <a href="/">Branded Links</a>
+              <a href="/">Analytics</a>
+            </div>
+
+            <div className={styles.resources}>
+              <h3>Resources</h3>
+              <a href="/">Blog</a>
+              <a href="/">Developers</a>
+              <a href="/">Support</a>
+            </div>
+
+            <div className={styles.company}>
+              <h3>Company</h3>
+              <a href="/">About</a>
+              <a href="/">Our Team</a>
+              <a href="/">Careers</a>
+              <a href="/">Contact</a>
+            </div>
+
+            <div className={styles.socials}>
+              <a href="/"><i className="fab fa-facebook-square"></i></a>
+              <a href="/"><i className="fab fa-twitter"></i></a>
+              <a href="/"><i className="fab fa-pinterest"></i></a>
+              <a href="/"><i className="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+      </footer>
     </>
   )
 }

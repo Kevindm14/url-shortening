@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 1.5em 1em 1.3em;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links .links_web {
+    margin-left: 1em;
+    display: none;
+}
+
+.btn_menu {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+    color: var(--Gray);
+}
+
+.logo {
+    width: 7rem;
+    align-self: center;
+}
+
+.links_login {
+    display: none;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5em;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 20;
+}
+
+.linkss {
+    border-radius: .7em;
+    background-color: var(--Dark-violet);
+    width: 90%;
+    margin: 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.links2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    color: white;
+    border-bottom: 1px solid var(--Grayish-violet);
+    width: 90%;
+}
+
+.links2 a {
+    margin: .7em 0;
+}
+
+.links_login2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    width: 90%;
+}
+
+.links_login2 a:nth-child(1) {
+    margin-bottom: 1.2em;
+    color: white;
+}
+
+.links_login2 a:nth-child(2),
+.links_login a:nth-child(2) {
+    background-color: var(--Cyan);
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.1em;
+    color: #ffffff;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+@media (min-width: 1000px) {
+    .navbar {
+        max-width: 1100px;
+        margin: auto;
+        padding: 2em 0 1em 0;
+    }
+
+    .links .links_web {
+        display: flex;
+    }
+
+    .btn_menu {
+        display: none;
+    }
+
+    .links_web a,
+    .links_login a:nth-child(1) {
+        margin: 0 .8em;
+        font-size: .9em;
+        color: var(--Grayish-violet)
+    }
+
+    .links_login {
+        display: flex;
+        align-items: center;
+    }
+
+    .links_login a:nth-child(1) {
+        margin: 0 2em;
+    }
+}
+
